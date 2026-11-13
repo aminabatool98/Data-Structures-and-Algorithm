@@ -7,7 +7,7 @@ void dfs(int node, vector<int> adj[],
 
     visited[node] = true;
 
-    for (int neighbor : adj[node]) {
+    for (int neighbor : adj[node]) {   
         if (!visited[neighbor]) {
             dfs(neighbor, adj, visited);
         }
